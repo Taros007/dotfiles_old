@@ -1,6 +1,61 @@
+
+[colors]
+#background = #656d78
+background = #5a000000
+background-alt = #444
+foreground = #eee
+#foreground-alt = #555
+primary = ${xrdb:*.color1:#ffb52a}
+secondary = ${xrdb:*.color2:#e60053}
+alert = ${xrdb:*.color3:#bd2c40}
+
+black       = ${xrdb:*.color0:#000000}
+blue        = ${xrdb:*.color12:#3465a4}
+cyan        = ${xrdb:*.color14:#46a4ff}
+darkblue    = ${xrdb:*.color4:#20fa87}
+darkcyan    = ${xrdb:*.color6:#89b6e2}
+darkgreen   = ${xrdb:*.color2:#93d44f}
+darkgrey    = ${xrdb:*.color8:#555753}
+darkmagenta = ${xrdb:*.color5:#ce5c00}
+darkred     = ${xrdb:*.color1:#ff0000}
+darkyellow  = ${xrdb:*.color3:#eab93d}
+green       = ${xrdb:*.color10:#00ff00}
+lightgrey   = ${xrdb:*.color7:#cccccc}
+magenta     = ${xrdb:*.color13:#f57900}
+pink        = ${colors.magneta}
+red         = ${xrdb:*.color9:#ff0000}
+white       = ${xrdb:*.color15:#ffffff}
+yellow      = ${xrdb:*.color11:#00ffff}
+
+spotify-green = #1db954
+
+#fixed-center = true
+
 [bar/top]
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+tray-position = right
+tray-padding = 2
+tray-transparent = true
+tray-background = ${colors.background}
+tray-offset-x = 0
+tray-offset-y = -3
+tray-scale = 1.1
+
 width = 100%
-;height = 35
 height = 25
 offset-x = 0
 offset-y = 1
@@ -8,17 +63,17 @@ offset-y = 1
 
 monitor = eDP1
 
-background = #5a000000
-foreground = #eee
+#background = #5a000000
+#foreground = #eee
 
 underline-size = 2
 underline-color = #eee
 
 spacing = 1
-padding-left = 0
-padding-right = 0
-module-margin-left = 0
-module-margin-right = 0
+#padding-left = 0
+#padding-right = 0
+#module-margin-left = 0
+#module-margin-right = 0
 
 font-0 = Roboto:size=12;2
 font-1 = FontAwesome:size=13;2
@@ -26,12 +81,7 @@ font-2 = siji:pixelsize=10;0
 
 modules-left = i3
 modules-center = spotify
-modules-right = wlan battery volume date powermenu
-
-tray-position = right
-;tray-padding = 2
-tray-background = #5a000000
-;tray-transparant = true
+modules-right = wlan battery volume date
 
 ;wm-restack = i3
 

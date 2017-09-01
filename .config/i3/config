@@ -79,7 +79,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 450 -opacity "85" -bw 0 -bc "$bg_active" -bg "$bg_active" -fg "$text_active" -hlbg "$bg_active" -hlfg "#9575cd" -font "Roboto Condense 18"
+bindsym $mod+d exec rofi -show run 
 
 # change focus
 bindsym $mod+j focus left
@@ -241,9 +241,8 @@ bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 2%- unmute"
 bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 # Adjust brightness - needs package xorg-xbacklight
-bindsym $mod+shift+n exec xbacklight -dec 10 #decrease brightness by 10%
-bindsym $mod+shift+m exec xbacklight -inc 10 #increase brightness by 10%
-
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 #increase brightness by 10%
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 #decrease brightness by 10%
 #######################################################
 #                     Applications                    #
 #######################################################
@@ -263,7 +262,7 @@ exec --no-startup-id redshift-gtk
 client.focused          $border_active      $bg_active          $text_active         $indicator
 client.unfocused        $border_inactive    $bg_inactive        $text_inactive       $indicator
 client.focused_inactive $border_inactive    $bg_inactive        $text_inactive       $indicator
-client.urgent           $border_urgent      $bg_urgen           $text-color          $indicator
+client.urgent           $border_urgent      $bg_urgent          $text-color          $indicator
 
 gaps inner 6
 gaps outer 3

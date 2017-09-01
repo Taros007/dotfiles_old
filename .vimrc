@@ -45,6 +45,12 @@ nnoremap <CR> :noh<CR><CR>
 set laststatus=2
 set syntax=on
 
+" Map for standard hotkeys
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+
+
 call plug#begin()
     Plug 'chriskempson/base16-vim'
 call plug#end()
