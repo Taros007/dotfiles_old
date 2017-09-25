@@ -8,7 +8,7 @@ URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 URxvt.depth: 32
 
-URxvt.perl-ext-common: default,matcher,resize-font,selection-to-clipboard
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
@@ -20,8 +20,10 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 URxvt.letterSpace: -2
 
-URxvt*transparent: false
-URxvt*shading: 30
+!URxvt*transparent: false
+!URxvt*shading: 30
+
+URxvt*skipBuiltinGlyphs:    true
 
 URxvt.savelines: 1000
 

@@ -42,6 +42,9 @@ set smartcase           " upper-case sensitive search
 " This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
+" set Line numbering
+set nu
+
 set laststatus=2
 set syntax=on
 
