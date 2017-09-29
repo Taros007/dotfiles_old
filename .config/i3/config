@@ -137,7 +137,6 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
-
 # Floating
 for_window [class="Lxappearance"] floating enable
 
@@ -229,7 +228,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 #decrease brightness by 10
 exec_always --no-startup-id feh --bg-scale --randomize /home/tano/Downloads/Wallpapers/*
 exec --no-startup-id compton --xrender-sync-fence
 exec --no-startup-id xrandr --output eDP1 --primary 
-exec xrandr --output HDMI1 --auto --left-of eDP1
+exec --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 
@@ -248,7 +247,7 @@ bindsym $mod+z exec --no-startup-id "pgrep -c firefox || apulse firefox-nightly"
 bindsym $mod+c exec --no-startup-id "pgrep -c weechat || urxvt -e weechat"; workspace $workspace5
 bindsym $mod+a exec --no-startup-id "code --force-device-scale-factor=1"
 bindsym $mod+d exec --no-startup-id "rofi -show run" 
-bindsym $mod+n exec "urxvt -e nmtui-connect"
+bindsym $mod+n exec --no-startup-id "urxvt -e nmtui-connect"
 
 #######################################################
 #                        Gaps                         #
