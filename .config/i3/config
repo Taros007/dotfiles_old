@@ -228,7 +228,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 #decrease brightness by 10
 exec_always --no-startup-id feh --bg-scale --randomize /home/tano/Downloads/Wallpapers/*
 exec --no-startup-id compton --xrender-sync-fence
 exec --no-startup-id xrandr --output eDP1 --primary 
-exec --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
+#exec --no-startup-id xrandr --output HDMI1 --auto --left-of eDP1
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 

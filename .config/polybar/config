@@ -16,7 +16,7 @@ clear = #00
 format-spacing = 2
 
 [bar/top]
-monitor = eDP1
+;monitor = eDP1
 width = 100%
 height = 32
 ;bottom = true
