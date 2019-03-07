@@ -137,6 +137,9 @@ bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
+#Picture-in-picture mode
+bindsym $mod+shift+y exec "i3-msg 'floating toggle; sticky toggle; resize shrink width 10000px; resize grow width 400px; resize shrink height 10000px; resize grow height 250px;move position 10px 10px;'"
+
 # Floating
 for_window [class="Lxappearance"] floating enable
 
@@ -243,11 +246,13 @@ bindsym $mod+Ctrl+z exec "xset s activate"
 # Bind misc program
 bindsym $mod+shift=z exec --no-startup-id apulse firefox
 bindsym $mod+x exec --no-startup-id "spotify --force-device-scale-factor=1.2"
-bindsym $mod+z exec --no-startup-id "pgrep -c firefox || apulse firefox-nightly"; workspace $workspace2
+#bindsym $mod+z exec --no-startup-id "pgrep -c firefox || apulse firefox-nightly"; workspace $workspace2
+bindsym $mod+z exec --no-startup-id "pgrep -c firefox || firefox"; workspace $workspace2
 bindsym $mod+c exec --no-startup-id "pgrep -c weechat || urxvt -e weechat"; workspace $workspace5
 bindsym $mod+a exec --no-startup-id "code --force-device-scale-factor=1"
 bindsym $mod+d exec --no-startup-id "rofi -show run" 
 bindsym $mod+n exec --no-startup-id "urxvt -e nmtui-connect"
+bindsym $mod+m exec --no-startup-id  "/home/tano/.config/i3/bluetoothconnect.sh" 
 
 #######################################################
 #                        Gaps                         #
