@@ -43,7 +43,7 @@ set smartcase           " upper-case sensitive search
 nnoremap <CR> :noh<CR><CR>
 
 " set Line numbering
-set nu
+set number relativenumber
 
 set laststatus=2
 set syntax=on
