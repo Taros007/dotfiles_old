@@ -1,0 +1,6 @@
+feh -B black \
+-d \
+-N \
+#--geometry 1920x1200 \
+--scale-down
+--auto-zoom
