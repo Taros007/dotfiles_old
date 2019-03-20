@@ -45,3 +45,15 @@ bindkey '\e[B' down-line-or-beginning-search
 
 #Stubru alias
 alias stubru="mpv 'https://live-radio.lwc.vrtcdn.be/groupc/live/f404f0f3-3917-40fd-80b6-a152761072fe/live.isml/.m3u8'"
+
+# Lazygit implementation
+function lazygit() {
+    if [ $# -eq 0 ]; then
+        git pull
+    else
+        git add .
+        git commit -a -m "$1"
+        git push
+    fi
+}
+
